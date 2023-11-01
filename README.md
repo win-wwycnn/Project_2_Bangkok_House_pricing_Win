@@ -13,20 +13,31 @@ So, he requests his Data Science team to deliver the result within 2 weeks..”
 
 # Data dictionary
 
-|Feature|Type|Dataset|Description|
+|Feature|Type|Description|Dataset|
 |---|---|---|---|
-|month|string|rainfall-monthly-number-of-rain-days|Datetime (Month) "YYYY-MM"| 
-|no_of_rainy_days|int|rainfall-monthly-number-of-rain-days|Number of Rain Days in the Month| 
-|total_rainfall|float|rainfall-monthly-total|Monthly Total Rainfall(Millimetre)|
-|maximum_rainfall_in_a_day|float|RainfallMonthlyHighestDailyTotal|Highest Daily Rainfall in the Month(Millimetre)| 
-|mean_rh|float|RelativeHumidityMonthlyMean|Monthly mean relative humidity(%)| 
-|mean_sunshine_hrs|float|SunshineDurationMonthlyMeanDailyDuration|Monthly Mean Daily Sunshine Duration(Hours)| 
-|mean_temp|float|SurfaceAirTemperatureMonthlyMean|Surface Air Temperature - Monthly Mean(Degree Celsius)| 
-|temp_mean_daily_min|float|SurfaceAirTemperatureMonthlyMeanDailyMinimum|Monthly Mean Daily Minimum Temperature(Degree Celsius)| 
-|temp_mean_daily_max|float|SurfaceAirTemperatureMonthlyMeanDailyMaximum|Monthly Mean Daily Maxumum Temperature(Degree Celsius)|
-|month_name|string|Added column|Name of the month e.g. Jan, Feb|
-|year|int|Added column|Year ( B.C.) | 
-|moonsoon_type|string|Added column|To distinguish the type of moonsoon season by month ( NE,SW,None) | 
+id|int|ID of selling item|train|
+province|string|province name: this dataset only includes Bangkok,Samut Prakan and Nonthaburi|train|
+district|string|district name|train|
+subdistrict|string|subdtistrict name|train|
+address|string|address e.g. street name, area name, soi number|train|
+property_type|string|type of the house: Condo, Townhouse or Detached House|train|
+total_units|float|the number of rooms/houses that the condo/village has|train|
+bedrooms|int|the number of bedrooms|train|
+baths|int|the number of baths|train|
+floor_area|float|total area of inside floor [㎡]|train|
+floor_level|int|floor level of the room|train|
+land_area|float|total area of the land [㎡]|train|
+latitude|float|latitude of the house|train|
+longitude|float|longitude of the house|train|
+nearby_stations|int|the number of nearby stations (within 1km)|train|
+nearby_station_distance|list|list of (station name, distance[m]). Each station name consists of station ID, station name, and Line such as "E4 Asok BTS"|train|
+nearby_bus_stops|int|the number of nearby bus stops|train|
+nearby_supermarkets|int|the number of nearby supermarkets|train|
+nearby_shops|int|the number of nearby shops|train|
+year_built|int|year built|train|
+month_built|string|month built: January-December|train|
+price|float|selling price|train|
+
 
 
 # Summary and Recomendation
